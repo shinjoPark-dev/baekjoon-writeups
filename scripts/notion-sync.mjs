@@ -16,6 +16,7 @@ const notion = new Client({ auth: NOTION_TOKEN });
 const n2m = new NotionToMarkdown({ notionClient: notion });
 
 const OUT_ROOT = path.join(process.cwd(), "docs", "baekjoon");
+const README_PATH = path.join(process.cwd(), "README.md");
 
 const COL = {
   number: "문제번호",
@@ -86,7 +87,7 @@ async function buildMarkdown(page) {
 
   const mdBlocks = await n2m.pageToMarkdown(page.id);
   const md = n2m.toMarkdownString(mdBlocks)?.parent ?? "";
-  return { title, boj, algos, content: fm + md + "\n" };
+  return { title, boj, tier, date, algos, content: fm + md + "\n" };
 }
 
 async function main() {
@@ -94,10 +95,26 @@ async function main() {
 
   const pages = await queryPublishedPages();
   if (pages.length === 0) return console.log("No Published pages found.");
-
+  const stats = {
+    total: 0,
+    byAlgo: new Map(),
+    byTier: new Map(),
+    latest: []
+  };
   for (const page of pages) {
     if (!getCheck(page, COL.published)) continue;
-    const { title, boj, algos, content } = await buildMarkdown(page);
+    const { title, boj, tier, date, algos, content } = await buildMarkdown(page);
+    stats.total++;
+
+    if (tier) stats.byTier.set(tier, (stats.byTier.get(tier) ?? 0) + 1);
+
+    const algoList = algos.length ? algos : ["etc"];
+    for (const a of algoList) {
+      stats.byAlgo.set(a, (stats.byAlgo.get(a) ?? 0) + 1);
+    }
+
+    // 최신 10개만 저장
+    stats.latest.push({ boj, title, tier, algos: algoList, date });
 
     const list = algos.length ? algos : ["etc"];
     const filename = `${boj ?? "unknown"}-${safeSlug(title)}.md`;
@@ -109,6 +126,55 @@ async function main() {
     }
     console.log(`✓ ${boj} ${title} -> ${list.join(", ")}`);
   }
+    // 최신순 정렬(날짜 없으면 뒤로)
+  stats.latest.sort((a, b) => (b.date ?? "").localeCompare(a.date ?? ""));
+  stats.latest = stats.latest.slice(0, 10);
+
+  const algoRows = [...stats.byAlgo.entries()]
+    .sort((a, b) => b[1] - a[1])
+    .map(([algo, cnt]) => `| ${algo} | ${cnt} |`)
+    .join("\n");
+
+  const tierRows = [...stats.byTier.entries()]
+    .sort((a, b) => b[1] - a[1])
+    .map(([tier, cnt]) => `| ${tier} | ${cnt} |`)
+    .join("\n");
+
+  const latestRows = stats.latest
+    .map(x => {
+      const file = `${x.boj ?? "unknown"}-${safeSlug(x.title)}.md`;
+      const firstAlgo = x.algos?.[0] ?? "etc";
+      const linkPath = `docs/baekjoon/${algoFolder(firstAlgo)}/${file}`;
+      const algostr = (x.algos ?? []).join(", ");
+      return `| [${x.boj}](${`https://www.acmicpc.net/problem/${x.boj}`}) | [${x.title}](${linkPath}) | ${x.tier ?? ""} | ${algostr} | ${x.date ?? ""} |`;
+    })
+    .join("\n");
+
+  const readme = `# baekjoon-writeups
+
+Notion에 정리한 백준 풀이를 GitHub로 자동 동기화합니다.  
+(✅ Published 체크된 항목만 반영)
+
+## Stats
+- Total published: **${stats.total}**
+
+### By Tier
+| Tier | Count |
+|---|---:|
+${tierRows || "| - | 0 |"}
+
+### By Algorithm
+| Algorithm | Count |
+|---|---:|
+${algoRows || "| - | 0 |"}
+
+## Latest (Top 10)
+| BOJ | Write-up | Tier | Algorithms | Date |
+|---:|---|---|---|---|
+${latestRows || "| - | - | - | - | - |"}
+`;
+
+  fs.writeFileSync(README_PATH, readme, "utf8");
   console.log("Done.");
 }
 
