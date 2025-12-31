@@ -5,6 +5,129 @@ Notion에 정리한 백준 풀이를 GitHub로 자동 동기화합니다.
 
 [![Solved.ac
 프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=psjo1207)](https://solved.ac/psjo1207)
+# 🧠 Baekjoon Algorithm Repository
+
+> 백준 온라인 저지(BOJ) 알고리즘 문제 풀이 저장소  
+> 문제 유형별 정리 및 코딩 테스트 대비용 기록
+
+---
+
+## 📌 Purpose
+
+- 알고리즘 문제 해결 능력 향상
+- 코딩 테스트 대비
+- 문제 접근 방식 및 풀이 아이디어 기록
+- GitHub 포트폴리오 관리
+
+---
+
+## 🛠️ Languages
+
+- 💻 C++
+- ☕ Java
+- 🐍 Python
+
+---
+
+## 📂 Repository Structure
+📦 baekjoon
+┣ 📂 C++
+┃ ┣ 📂 2178
+┃ ┃ ┗ 2178.cpp
+┃ ┣ 📂 2667
+┃ ┃ ┗ 2667.cpp
+┃ ┗ ...
+┣ 📂 Java
+┃ ┣ 📂 1260
+┃ ┃ ┗ Main.java
+┣ 📂 Python
+┃ ┣ 📂 1000
+┃ ┃ ┗ 1000.py
+┣ 📜 README.md
+
+
+> 📌 문제 번호 기준 폴더 관리
+
+---
+
+## 🧩 Problem Categories
+
+- 구현 (Implementation)
+- BFS / DFS
+- 그래프 (Graph)
+- 다이나믹 프로그래밍 (DP)
+- 그리디 (Greedy)
+- 정렬 (Sorting)
+- 이분 탐색 (Binary Search)
+- 트리 (Tree)
+- 문자열 (String)
+
+---
+
+## 📝 Solution Policy
+
+- 문제 접근 방식 주석으로 명확히 기록
+- 핵심 알고리즘 위주로 구현
+- 시간 / 공간 복잡도 분석 포함
+- 불필요한 코드 최소화
+
+---
+
+## 📄 Example
+
+### BOJ 2178 - 미로 탐색
+- Algorithm: BFS
+- Time Complexity: **O(N × M)**
+- Key Idea:
+  - 최단 거리 문제 → BFS
+  - 방문 배열로 중복 탐색 방지
+
+---
+
+## ⏱️ Time Complexity Notation
+O(N)
+O(N log N)
+O(N × M)
+
+
+---
+
+## 🧪 Environment
+
+- OS: Windows / Linux
+- Compiler: g++, javac
+- Python: 3.x
+
+---
+
+## 🎯 Goals
+
+- Gold 이상 문제 꾸준히 풀이
+- 유형별 문제 반복 학습
+- 기존 풀이 리팩토링
+
+---
+
+## 👤 Author
+
+- Name: 박신조
+- Major: Computer Engineering
+- GitHub: https://github.com/Shin-j0
+- Baekjoon: https://www.acmicpc.net/user/psjo1207
+
+---
+
+## 📌 Note
+
+- 문제 출처: https://www.acmicpc.net/
+- 모든 코드는 개인 학습용입니다.
+- 문제의 저작권은 백준 온라인 저지에 있습니다.
+
+---
+
+## ✨ Commit Message Convention
+
+
 
 <!-- AUTO-GENERATED:START -->
 ## Stats
