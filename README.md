@@ -81,15 +81,6 @@ Notion에 정리한 **백준(BOJ) 알고리즘 풀이를 GitHub로 자동 동기
 
 ---
 
-## 👤 Author
-
-- Name: 박신조
-- Major: Computer Engineering
-- GitHub: https://github.com/Shin-j0
-- Baekjoon: https://www.acmicpc.net/user/psjo1207
-
----
-
 ## 📌 Note
 
 - 문제 출처: https://www.acmicpc.net/
