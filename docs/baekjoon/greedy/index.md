@@ -1,5 +1,5 @@
 # Greedy
 
-| BOJ | Title | Tier | Date |
-|---:|---|---|---|
-| [1931](https://www.acmicpc.net/problem/1931) | [회의실 배정](../problems/1931.md) | GOLD 5 | 2025-12-27 |
+| BOJ | Title | Tier | Algorithms | Date |
+|---:|---|---|---|---|
+| [1931](https://www.acmicpc.net/problem/1931) | [회의실 배정](../problems/1931.md) | GOLD 5 | Greedy | 2025-12-27 |

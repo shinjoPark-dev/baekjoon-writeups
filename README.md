@@ -130,6 +130,21 @@ O(N × M)
 
 
 <!-- AUTO-GENERATED:START -->
+## Algorithm Index
+| Algorithm | Count |
+|---|---:|
+| [DFS](docs/baekjoon/dfs/index.md) | 7 |
+| [BFS](docs/baekjoon/bfs/index.md) | 7 |
+| [Priority Queue](docs/baekjoon/priority-queue/index.md) | 3 |
+| [Heap](docs/baekjoon/heap/index.md) | 2 |
+| [Map](docs/baekjoon/map/index.md) | 1 |
+| [Divide and Conquer](docs/baekjoon/divide-and-conquer/index.md) | 1 |
+| [Binary Search](docs/baekjoon/binary-search/index.md) | 1 |
+| [DP](docs/baekjoon/dp/index.md) | 1 |
+| [QUE](docs/baekjoon/que/index.md) | 1 |
+| [DEQUE](docs/baekjoon/deque/index.md) | 1 |
+| [Greedy](docs/baekjoon/greedy/index.md) | 1 |
+
 ## Stats
 - Total published: **15**
 
@@ -149,6 +164,7 @@ O(N × M)
 | BFS | 7 |
 | Priority Queue | 3 |
 | Heap | 2 |
+| Map | 1 |
 | Divide and Conquer | 1 |
 | Binary Search | 1 |
 | DP | 1 |
@@ -162,7 +178,7 @@ O(N × M)
 | [11729](https://www.acmicpc.net/problem/11729) | [절대값 힙](docs/baekjoon/problems/11729.md) | SILVER 1 | Heap, Priority Queue | 2025-12-30 |
 | [10026](https://www.acmicpc.net/problem/10026) | [적록색약](docs/baekjoon/problems/10026.md) | GOLD 5 | BFS, DFS | 2025-12-30 |
 | [11279](https://www.acmicpc.net/problem/11279) | [최대 힙](docs/baekjoon/problems/11279.md) | SILVER 2 | Heap, Priority Queue | 2025-12-29 |
-| [7662](https://www.acmicpc.net/problem/7662) | [이중 우선순위 큐](docs/baekjoon/problems/7662.md) | GOLD 4 | Priority Queue | 2025-12-28 |
+| [7662](https://www.acmicpc.net/problem/7662) | [이중 우선순위 큐](docs/baekjoon/problems/7662.md) | GOLD 4 | Priority Queue, Map | 2025-12-28 |
 | [7576](https://www.acmicpc.net/problem/7576) | [토마토](docs/baekjoon/problems/7576.md) | GOLD 5 | BFS, DFS | 2025-12-28 |
 | [7569](https://www.acmicpc.net/problem/7569) | [토마토](docs/baekjoon/problems/7569.md) | GOLD 5 | BFS, DFS | 2025-12-28 |
 | [14940](https://www.acmicpc.net/problem/14940) | [쉬운 최단 거리](docs/baekjoon/problems/14940.md) | SILVER 1 | DFS, BFS | 2025-12-27 |
