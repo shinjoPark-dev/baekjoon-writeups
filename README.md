@@ -2,6 +2,10 @@
 
 Notion에 정리한 백준 풀이를 GitHub로 자동 동기화합니다.  
 (✅ Published 체크된 항목만 반영)
+
+[![Solved.ac
+프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=psjo1207)](https://solved.ac/psjo1207)
+
 <!-- AUTO-GENERATED:START -->
 ## Stats
 - Total published: **15**
