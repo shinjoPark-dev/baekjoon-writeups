@@ -94,27 +94,27 @@ Notion에 정리한 **백준(BOJ) 알고리즘 풀이를 GitHub로 자동 동기
 - Code repo: **https://github.com/Shin-j0/baekjoon-solutions**
 
 ## Stats
-- Total published: **16**
+- Total published: **17**
 
 ### By Tier
 | Tier | Count |
 |---|---:|
 | GOLD 4 | 1 |
 | GOLD 5 | 5 |
-| SILVER 1 | 5 |
+| SILVER 1 | 6 |
 | SILVER 2 | 3 |
 | SILVER 3 | 2 |
 
 ### By Algorithm
 | Algorithm | Count |
 |---|---:|
-| BFS | 7 |
-| DFS | 7 |
+| BFS | 8 |
+| DFS | 8 |
 | Priority Queue | 3 |
+| Que | 2 |
 | DP | 2 |
 | Heap | 2 |
 | Map | 1 |
-| Que | 1 |
 | Deque | 1 |
 | Greedy | 1 |
 | Divide and Conquer | 1 |
@@ -123,6 +123,7 @@ Notion에 정리한 **백준(BOJ) 알고리즘 풀이를 GitHub로 자동 동기
 ## Latest (Top 10)
 | BOJ | Write-up | Tier | Algorithms | Code | Date |
 |---:|---|---|---|---|---|
+| [11403](https://www.acmicpc.net/problem/11403) | [경로 찾기](docs/baekjoon/problems/11403.md) | SILVER 1 | BFS, DFS, Que | [code](https://github.com/Shin-j0/baekjoon-solutions/blob/main/cpp/src/11403.cpp) | 2026-01-02 |
 | [11727](https://www.acmicpc.net/problem/11727) | [2xn 타일링2](docs/baekjoon/problems/11727.md) | SILVER 3 | DP | [code](https://github.com/Shin-j0/baekjoon-solutions/blob/main/cpp/src/11727.cpp) | 2025-12-31 |
 | [10026](https://www.acmicpc.net/problem/10026) | [적록색약](docs/baekjoon/problems/10026.md) | GOLD 5 | BFS, DFS | [code](https://github.com/Shin-j0/baekjoon-solutions/blob/main/cpp/src/10026.cpp) | 2025-12-30 |
 | [11729](https://www.acmicpc.net/problem/11729) | [절대값 힙](docs/baekjoon/problems/11729.md) | SILVER 1 | Heap, Priority Queue | [code](https://github.com/Shin-j0/baekjoon-solutions/blob/main/cpp/src/11729.cpp) | 2025-12-30 |
@@ -132,5 +133,4 @@ Notion에 정리한 **백준(BOJ) 알고리즘 풀이를 GitHub로 자동 동기
 | [7569](https://www.acmicpc.net/problem/7569) | [토마토](docs/baekjoon/problems/7569.md) | GOLD 5 | BFS, DFS | [code](https://github.com/Shin-j0/baekjoon-solutions/blob/main/cpp/src/7569.cpp) | 2025-12-28 |
 | [5430](https://www.acmicpc.net/problem/5430) | [AC](docs/baekjoon/problems/5430.md) | GOLD 5 | Que, Deque | [code](https://github.com/Shin-j0/baekjoon-solutions/blob/main/cpp/src/5430.cpp) | 2025-12-27 |
 | [1931](https://www.acmicpc.net/problem/1931) | [회의실 배정](docs/baekjoon/problems/1931.md) | GOLD 5 | Greedy | [code](https://github.com/Shin-j0/baekjoon-solutions/blob/main/cpp/src/1931.cpp) | 2025-12-27 |
-| [14940](https://www.acmicpc.net/problem/14940) | [쉬운 최단 거리](docs/baekjoon/problems/14940.md) | SILVER 1 | DFS, BFS | [code](https://github.com/Shin-j0/baekjoon-solutions/blob/main/cpp/src/14940.cpp) | 2025-12-27 |
 <!-- AUTO-GENERATED:END -->

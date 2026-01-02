@@ -2,6 +2,7 @@
 
 | BOJ | Title | Tier | Code | Date |
 |---:|---|---|---|---|
+| [11403](https://www.acmicpc.net/problem/11403) | [경로 찾기](../problems/11403.md) | SILVER 1 | [code](https://github.com/Shin-j0/baekjoon-solutions/blob/main/cpp/src/11403.cpp) | 2026-01-02 |
 | [10026](https://www.acmicpc.net/problem/10026) | [적록색약](../problems/10026.md) | GOLD 5 | [code](https://github.com/Shin-j0/baekjoon-solutions/blob/main/cpp/src/10026.cpp) | 2025-12-30 |
 | [7576](https://www.acmicpc.net/problem/7576) | [토마토](../problems/7576.md) | GOLD 5 | [code](https://github.com/Shin-j0/baekjoon-solutions/blob/main/cpp/src/7576.cpp) | 2025-12-28 |
 | [7569](https://www.acmicpc.net/problem/7569) | [토마토](../problems/7569.md) | GOLD 5 | [code](https://github.com/Shin-j0/baekjoon-solutions/blob/main/cpp/src/7569.cpp) | 2025-12-28 |
