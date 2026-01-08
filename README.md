@@ -99,7 +99,7 @@ Notion에 정리한 **백준(BOJ) 알고리즘 풀이를 GitHub로 자동 동기
 ### By Tier
 | Tier | Count |
 |---|---:|
-| GOLD 4 | 1 |
+| GOLD 4 | 2 |
 | GOLD 5 | 6 |
 | SILVER 1 | 6 |
 | SILVER 2 | 3 |
@@ -114,7 +114,8 @@ Notion에 정리한 **백준(BOJ) 알고리즘 풀이를 GitHub로 자동 동기
 | Priority Queue | 3 |
 | Que | 2 |
 | Heap | 2 |
-| etc | 1 |
+| Dijkstra | 1 |
+| Graph | 1 |
 | Map | 1 |
 | Deque | 1 |
 | Greedy | 1 |
@@ -124,7 +125,7 @@ Notion에 정리한 **백준(BOJ) 알고리즘 풀이를 GitHub로 자동 동기
 ## Latest (Top 10)
 | BOJ | Write-up | Tier | Algorithms | Code | Date |
 |---:|---|---|---|---|---|
-| unknown | [최](docs/baekjoon/problems/unknown.md) |  | etc |  | 2026-01-08 |
+| [1753](https://www.acmicpc.net/problem/1753) | [최단 경로](docs/baekjoon/problems/1753.md) | GOLD 4 | Dijkstra, Graph | [code](https://github.com/Shin-j0/baekjoon-solutions/blob/main/cpp/src/1753.cpp) | 2026-01-08 |
 | [12865](https://www.acmicpc.net/problem/12865) | [평범한 배낭](docs/baekjoon/problems/12865.md) | GOLD 5 | DP | [code](https://github.com/Shin-j0/baekjoon-solutions/blob/main/cpp/src/12865.cpp) | 2026-01-05 |
 | [17626](https://www.acmicpc.net/problem/17626) | [Four Squares](docs/baekjoon/problems/17626.md) | SILVER 3 | DP | [code](https://github.com/Shin-j0/baekjoon-solutions/blob/main/cpp/src/17626.cpp) | 2026-01-03 |
 | [11403](https://www.acmicpc.net/problem/11403) | [경로 찾기](docs/baekjoon/problems/11403.md) | SILVER 1 | BFS, DFS, Que | [code](https://github.com/Shin-j0/baekjoon-solutions/blob/main/cpp/src/11403.cpp) | 2026-01-02 |
